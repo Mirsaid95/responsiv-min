@@ -1,0 +1,132 @@
+.creators{
+   width: 100%;
+   padding: 100px 120px;
+   background-color: #2B2B2B;
+   
+   .creators__items__title-list{
+      width: 100%;
+      display: flex;
+      gap: 15px;
+      flex-direction: column;
+
+      .creators__title{
+         font-size: 60px;
+         font-weight: 600;
+         color: white;
+      }
+
+      .creators__icon-btn{
+         width: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         .creators__list{
+            font-size: 30px;
+            font-weight: 400;
+            color: white;
+         }
+                 
+         .creators__btn{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: transparent;
+            border: 1px solid#A259FF;
+            color: white;
+            border-radius: 20px;
+            font-size: 18px;
+            font-weight: 400;
+           
+         }
+
+         .fa-rocket{
+            color: #A259FF;
+         }
+      }
+
+   }
+
+   .creators__users-boxs{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 50px;
+
+      .creators__user__item-img-title{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         background-color: #3B3B3B;
+         border-radius: 30px;
+         border: 1px solid gray;
+         padding: 20px;
+         width: 23%;
+         gap: 10px;
+         position: relative;
+
+         .creator__number{
+            font-size: 20px;
+            display: flex;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            background-color: #2B2B2B;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+         }  
+
+         .creator__img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 70%;
+            img{
+               width: 100%;
+            }
+         }
+
+         .creator__user__title-list{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: center;
+
+            .creator__user-title{
+               font-size: 22px;
+               font-weight: 600;
+            }
+
+            .creator__user-list{
+               display: flex;
+               gap: 10px;
+               align-items: center;
+
+               p{
+                  color: #858584;
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 22px;
+               }
+
+               span{
+                  font-size: 16px;
+                  font-weight: 400;
+               }
+            }
+         }
+      }
+      
+   }
+
+
+}
+
+
