@@ -1,61 +1,58 @@
-.header {
+.nav {
+  height: 54px;
+  padding: 0px 30px;
   background-color: #2B2B2B;
-  width: 100%;
-  padding: 20px 50px;
-  z-index: 999;
-  position: fixed;
-  top: 0;
-}
-.header .header__nav {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.header .header__nav .header__right {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  justify-content: center;
+.nav .fa-bars {
+  font-size: 25px;
+  color: white;
 }
-.header .header__nav .header__right .header__lists {
-  display: flex;
+.nav .nav-items {
   display: none;
-  gap: 30px;
-  font-size: 18px;
-}
-.header .header__nav .header__right .header__lists a {
-  color: white;
-}
-.header .header__nav .header__right .header__btns {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  border: 1px solid;
-  border: none;
-  padding: 15px 20px;
-  border-radius: 20px;
-  background-color: #A259FF;
-}
-.header .header__nav .header__right .header__btns .header__user-btn {
-  font-size: 18px;
-  color: white;
-  border: none;
-  background-color: transparent;
-  cursor: po;
-}
-.header .header__nav .header__right .header__btns i {
-  color: white;
 }
 
-@media (min-width: 910px) {
-  .header .header__list {
+@media (min-width: 992px) {
+  .nav {
+    height: 100px;
+  }
+  .nav .nav-menu {
+    display: none;
+  }
+  .nav .nav-items {
     display: flex;
-    position: static;
-    flex-direction: row;
-    box-shadow: none;
-    height: auto;
-    width: auto;
+    align-items: center;
+    gap: 30px;
+  }
+  .nav .nav-items__links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .nav .nav-item__link {
+    font-size: 18px;
+    color: white;
+  }
+  .nav .nav-items__auth {
+    width: 130px;
+    height: 40px;
+    background-color: #A259FF;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    font-size: 18px;
+    color: white;
+  }
+  .nav .nav-items__auth button {
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    color: white;
   }
 }
 * {
@@ -67,6 +64,15 @@
   font-family: sans-serif;
 }
 
+.container {
+  padding: 30px 30px;
+}
+
+@media (min-width: 992px) {
+  .container {
+    padding: 0px 100px;
+  }
+}
 .hero__discover {
   width: 100%;
   background-color: #2B2B2B;

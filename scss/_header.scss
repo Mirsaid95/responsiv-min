@@ -1,69 +1,67 @@
-.header{
+.nav{
+    height: 54px;
+    padding: 0px 30px;
     background-color: #2B2B2B;
-    width: 100%;
-    padding: 20px 50px;
-    z-index: 999;
-    position: fixed;
-    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .fa-bars{
+        font-size: 25px;
+        color: white;
+    }
+       
+
+    .nav-items{
+        display: none;
+    }
+}
+
+    @media (min-width:992px){
+        .nav{
+            height: 100px;
     
-    .header__nav{
-        width: 100%;
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-
-        .header__right{
-            display: flex;
-            gap: 30px;
-            align-items: center;
-            justify-content: center;
-            .header__lists{
-                display: flex;
+            .nav-menu{
                 display: none;
-                gap: 30px;
-                font-size: 18px;
-                a{
-                    color: white;
-                }
             }
-
-            .header__btns{
+    
+            .nav-items{
                 display: flex;
                 align-items: center;
-                gap: 20px;
-                border: 1px solid;
-                border: none;
-                padding: 15px 20px;
-                border-radius: 20px;
+                gap: 30px;
+            }
+    
+            .nav-items__links{
+                display: flex;
+                align-items: center;
+                gap: 30px;
+            }
+    
+            .nav-item__link{
+                font-size: 18px;
+                color: white;
+                
+            }
+            
+            .nav-items__auth{
+                width: 130px;
+                height: 40px;
                 background-color: #A259FF;
-
-                .header__user-btn{
-                    font-size: 18px;
-                    color: white;
+                border: none;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 7px;
+                font-size: 18px;
+                color: white;
+    
+                button{
+                    font-size: 20px;
                     border: none;
                     background-color: transparent;
-                    cursor: po;
-                }
-
-                i{
                     color: white;
                 }
             }
         }
     }
-}
-
-
-@media (min-width:910px){
-    .header{
-        .header__list{
-            display: flex;
-            position: static;
-            flex-direction: row;
-            box-shadow: none;
-            height: auto;
-            width: auto;
-        }
-    }
-
-}
